@@ -1,0 +1,63 @@
+header {
+  border: 1px solid red;
+}
+
+header h1 {
+  font-size: 60px;
+  font-weight: bolder;
+}
+
+nav ul {
+  text-align: right;
+}
+
+nav li {
+  display: inline;
+}
+
+.heading {
+  display: inline;
+  /* width: 200px; */
+}
+
+.content {
+  display: inline;
+}
+
+article {
+  border: 1px solid green;
+}
+
+article h2 {
+  display: inline;
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+section {
+  border: 1px solid blue;
+}
+
+section h2 {
+  display: inline;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+#contact ul {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+
+#contact li {
+  display: inline;
+  font-size: 20px;
+  border: 1px solid black;
+}
+
+footer {
+  text-align: center;
+}
