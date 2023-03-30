@@ -88,6 +88,20 @@ section h2 {
   background-color: var(--gold);
 }
 
+#code-examples .content a:first-child {
+  flex-basis: 100%;
+}
+
+#code-examples .content a:first-child .example-code {
+  height: 600px;
+  width: 800px;
+}
+
+#code-examples .content a:first-child h3 {
+  font-size: 60px;
+  top: 370px;
+}
+
 .example-code h3 {
   font-size: 30px;
   background-color: var(--maroon);
@@ -131,6 +145,20 @@ footer {
 }
 
 @media screen and (max-width: 992px) {
+  #code-examples .content a:first-child {
+    flex-basis: 0 1 auto;
+  }
+
+  #code-examples .content a:first-child .example-code {
+    height: 300px;
+    width: 400px;
+  }
+
+  #code-examples .content a:first-child h3 {
+    font-size: 30px;
+    top: 185px;
+  }
+
   nav ul {
     font-size: 30px;
   }
