@@ -130,10 +130,15 @@ footer {
   padding-right: var(--edge);
 }
 
-@media screen and (max-width: 768px) {
-  nav ul{
-    text-align: center;
+@media screen and (max-width: 992px) {
+  nav ul {
     font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    text-align: center;
   }
 
   nav li {
