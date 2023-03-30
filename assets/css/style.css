@@ -125,13 +125,15 @@ section .content {
   text-decoration: none;
 }
 
-#contact p {
+#contact li {
   display: inline;
+  margin-left: 20px;
+  margin-right: 20px;
   font-size: 20px;
   color: var(--maroon);
 }
 
-#contact p a {
+#contact li a {
   color: var(--maroon);
   text-decoration: none;
 }
@@ -165,11 +167,11 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-  nav ul {
+  nav ul, #contact ul {
     text-align: center;
   }
 
-  nav li {
+  nav li, #contact li {
     display: block;
     margin: 0px;
     width: 100%;
