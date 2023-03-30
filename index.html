@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./assets/css/reset.css" />
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
   <title>Ian Bui's Portfolio</title>
 </head>
 <body>
@@ -11,36 +13,72 @@
     <h1>Ian Bui</h1>
     <nav>
       <ul>
-        <li>About Me</li>
-        <li>Code Examples</li>
-        <li>Contact</li>
+        <li><a href="#about-me">About Me</a></li>
+        <li><a href="#code-examples">Code Examples</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <article>
-      <h2>About Me</h2>
-      <p>I am a web developer based in the Twin Cities area in Minnesota.  Although my professional experience has been in Ruby on Rails, I have knowledge in the MERN Stack and can easily pick up new technologies.</p>
+    <article id="about-me">
+      <div class="heading">
+        <h2>About Me</h2>
+      </div>
+      <div class="content">
+        <p>I am a web developer based in the Twin Cities area in Minnesota.  Although my professional experience has been in Ruby on Rails, I have knowledge in the MERN Stack and can easily pick up new technologies.</p>
+      </div>
     </article>
-    <section>
-      <h2>Code Examples</h2>
-      <ul>
-        <li>Code 1</li>
-        <li>Code 2</li>
-        <li>Code 3</li>
-        <li>Code 4</li>
-        <li>Code 5</li>
-      </ul>
-    </section>
-    <section>
-      <h2>Contact</h2>
-      <ul>
-        <li>Phone</li>
-        <li>Email</li>
-        <li>LinkedIn</li>
-        <li>GitHub</li>
-      </ul>
+    <section id="code-examples">
+      <div class="heading">
+        <h2>Code Examples</h2>
+      </div>
+      <div class="content">
+        <a href="">
+          <div class="example-code">
+            <h3>Sample 1</h3>
+          </div>
+        </a>
+        <a href="">
+          <div class="example-code">
+            <h3>Sample 2</h3>
+          </div>
+        </a>
+        <a href="">
+          <div class="example-code">
+            <h3>Sample 3</h3>
+          </div>
+        </a>
+        <a href="">
+          <div class="example-code">
+            <h3>Sample 4</h3>
+          </div>
+        </a>
+        <a href="">
+          <div class="example-code">
+            <h3>Sample 5</h3>
+          </div>
+        </a>
+      </div>
+  </section>
+    <section id="contact">
+      <div class="heading">
+        <h2>Contact</h2>
+      </div>
+      <div>
+        <div class="content">
+          <p>555-555-5555</p>
+          <p>
+            <a href="mailto:admin@example.com">admin@example.com</a>
+          </p>
+          <p>
+            <a href="">LinkedIn</a>
+          </p>
+          <p>
+            <a href="">GitHub</a>
+          </p>
+        </div>
+      </div>
     </section>
   </main>
 

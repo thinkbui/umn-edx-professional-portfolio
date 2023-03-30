@@ -1,0 +1,149 @@
+:root{
+  --maroon: #7A0019;
+  --gold: #FFCC33;
+  --edge: 10px;
+  --spacing: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Courier New";
+}
+
+header {
+  padding-top: var(--edge);
+  margin-bottom: var(--spacing);
+  padding-left: var(--edge);
+  padding-right: var(--edge);
+  background-color: var(--maroon);
+}
+
+header h1 {
+  color: var(--gold);
+  font-size: 60px;
+  font-weight: bolder;
+}
+
+nav ul {
+  text-align: right;
+}
+
+nav li {
+  display: inline;
+  margin-left: var(--edge);
+}
+
+nav li a {
+  color: var(--gold);
+  text-decoration: none;
+  transition: background-color 1s ease, color 0.5s ease;
+}
+
+nav li a:hover {
+  color: var(--maroon);
+  background-color: var(--gold);
+}
+
+.heading {
+  border-bottom: 3px solid var(--maroon);
+  margin-bottom: var(--edge);
+}
+
+.content {
+  display: inline;
+}
+
+article {
+  margin-bottom: var(--spacing);
+  margin-left: var(--edge);
+  margin-right: var(--edge);
+}
+
+article h2 {
+  display: inline;
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+section {
+  margin-bottom: var(--spacing);
+  margin-left: var(--edge);
+  margin-right: var(--edge);
+}
+
+section h2 {
+  display: inline;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.example-code {
+  height: 300px;
+  width: 400px;
+  margin: var(--spacing);
+  background-image: url("../images/code.png");
+  background-color: var(--gold);
+}
+
+.example-code h3 {
+  font-size: 30px;
+  background-color: var(--maroon);
+  color: var(--gold);
+  position: relative;
+  top: 185px;
+}
+
+section .content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+
+#code-examples .content {
+  flex-wrap: wrap;
+}
+
+#code-examples a{
+  text-decoration: none;
+}
+
+#contact p {
+  display: inline;
+  font-size: 20px;
+  color: var(--maroon);
+}
+
+#contact p a {
+  color: var(--maroon);
+  text-decoration: none;
+}
+
+footer {
+  color: var(--maroon);
+  background-color: var(--gold);
+  text-align: center;
+  padding-left: var(--edge);
+  padding-right: var(--edge);
+}
+
+@media screen and (max-width: 992px) {
+  nav ul {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    text-align: center;
+  }
+
+  nav li {
+    display: block;
+    margin: 0px;
+    width: 100%;
+  }
+}
