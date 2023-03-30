@@ -87,26 +87,41 @@ section h2 {
 }
 
 .example-code {
-  height: 300px;
-  width: 400px;
-  margin: var(--spacing);
+  padding-top: 20%;
+  /* height: 300px;
+  width: 400px; */
+  /* margin: var(--spacing); */
+  
+}
+
+#code-examples .content a:first-child {
+  /* flex-basis: 100%; */
+  /* flex-grow: 2; */
+}
+
+#code-examples .content a {
+  /* width: 25%;
+  height: 100px; */
+  width: 240px;
+  height: 220px;
+  flex-grow: 1;
+  display: block;
   background-image: url("../images/code.png");
-  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: var(--gold);
 }
 
 #code-examples .content a:first-child {
-  flex-basis: 100%;
-}
-
-#code-examples .content a:first-child .example-code {
-  height: 600px;
-  width: 800px;
+  height: 300px;
+  width: 100%;
+  flex-grow: 4;
 }
 
 #code-examples .content a:first-child h3 {
   font-size: 60px;
-  top: 370px;
+
+  /* top: 370px; */
 }
 
 .example-code h3 {
@@ -114,22 +129,23 @@ section h2 {
   background-color: var(--maroon);
   color: var(--gold);
   position: relative;
-  top: 185px;
-}
-
-section .content {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-evenly;
+  /* top: 185px; */
 }
 
 #code-examples .content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   flex-wrap: wrap;
+  gap: 20px;
 }
 
 #code-examples a{
   text-decoration: none;
+}
+
+#contact ul {
+  text-align: center;
 }
 
 #contact li {
