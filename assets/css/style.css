@@ -58,10 +58,6 @@ nav li a:hover {
   margin-bottom: var(--edge);
 }
 
-.content {
-  display: inline;
-}
-
 article {
   margin-bottom: var(--spacing);
   margin-left: var(--edge);
@@ -86,22 +82,7 @@ section h2 {
   font-weight: bolder;
 }
 
-.example-code {
-  padding-top: 20%;
-  /* height: 300px;
-  width: 400px; */
-  /* margin: var(--spacing); */
-  
-}
-
-#code-examples .content a:first-child {
-  /* flex-basis: 100%; */
-  /* flex-grow: 2; */
-}
-
 #code-examples .content a {
-  /* width: 25%;
-  height: 100px; */
   width: 240px;
   height: 220px;
   flex-grow: 1;
@@ -120,16 +101,6 @@ section h2 {
 
 #code-examples .content a:first-child h3 {
   font-size: 60px;
-
-  /* top: 370px; */
-}
-
-.example-code h3 {
-  font-size: 30px;
-  background-color: var(--maroon);
-  color: var(--gold);
-  position: relative;
-  /* top: 185px; */
 }
 
 #code-examples .content {
@@ -142,6 +113,17 @@ section h2 {
 
 #code-examples a{
   text-decoration: none;
+}
+
+.example-code {
+  margin: var(--spacing);
+}
+
+.example-code h3 {
+  font-size: 30px;
+  background-color: var(--maroon);
+  color: var(--gold);
+  position: relative;
 }
 
 #contact ul {
@@ -172,16 +154,6 @@ footer {
 @media screen and (max-width: 992px) {
   #code-examples .content a:first-child {
     flex-basis: 0 1 auto;
-  }
-
-  #code-examples .content a:first-child .example-code {
-    height: 300px;
-    width: 400px;
-  }
-
-  #code-examples .content a:first-child h3 {
-    font-size: 30px;
-    top: 185px;
   }
 
   nav ul {
