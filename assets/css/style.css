@@ -21,6 +21,12 @@ header {
   background-color: var(--maroon);
 }
 
+header img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+}
+
 header h1 {
   color: var(--gold);
   font-size: 60px;
@@ -85,6 +91,7 @@ section h2 {
   width: 400px;
   margin: var(--spacing);
   background-image: url("../images/code.png");
+  background-size: 100% auto;
   background-color: var(--gold);
 }
 
