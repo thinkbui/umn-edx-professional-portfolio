@@ -14,7 +14,7 @@ body{
 }
 
 header {
-  margin-top: var(--edge);
+  padding-top: var(--edge);
   margin-bottom: var(--spacing);
   padding-left: var(--edge);
   padding-right: var(--edge);
@@ -36,9 +36,15 @@ nav li {
   margin-left: var(--edge);
 }
 
-nav li a{
+nav li a {
   color: var(--gold);
   text-decoration: none;
+  transition: background-color 1s ease, color 0.5s ease;
+}
+
+nav li a:hover {
+  color: var(--maroon);
+  background-color: var(--gold);
 }
 
 .heading {
@@ -51,7 +57,6 @@ nav li a{
 }
 
 article {
-  /* border: 1px solid green; */
   margin-bottom: var(--spacing);
   margin-left: var(--edge);
   margin-right: var(--edge);
@@ -64,7 +69,6 @@ article h2 {
 }
 
 section {
-  /* border: 1px solid blue; */
   margin-bottom: var(--spacing);
   margin-left: var(--edge);
   margin-right: var(--edge);
@@ -77,23 +81,32 @@ section h2 {
 }
 
 .example-code {
-  height: 200px;
-  width: 200px;
+  height: 300px;
+  width: 400px;
+  margin: var(--spacing);
   background-color: var(--gold);
 }
 
-#contact .content {
-  /* text-align: center; */
+section .content {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-evenly;
 }
 
-#contact li, #contact p {
+#code-examples .content {
+  flex-wrap: wrap;
+}
+
+#contact p {
   display: inline;
   font-size: 20px;
-  /* border: 1px solid black; */
+  color: var(--maroon);
+}
+
+#contact p a {
+  color: var(--maroon);
+  text-decoration: none;
 }
 
 footer {
