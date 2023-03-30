@@ -1,8 +1,28 @@
+:root{
+  --maroon: #7A0019;
+  --gold: #FFCC33;
+  --edge: 10px;
+  --spacing: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Courier New";
+}
+
 header {
-  border: 1px solid red;
+  margin-top: var(--edge);
+  margin-bottom: var(--spacing);
+  padding-left: var(--edge);
+  padding-right: var(--edge);
+  background-color: var(--maroon);
 }
 
 header h1 {
+  color: var(--gold);
   font-size: 60px;
   font-weight: bolder;
 }
@@ -13,11 +33,17 @@ nav ul {
 
 nav li {
   display: inline;
+  margin-left: var(--edge);
+}
+
+nav li a{
+  color: var(--gold);
+  text-decoration: none;
 }
 
 .heading {
-  display: inline;
-  /* width: 200px; */
+  border-bottom: 3px solid var(--maroon);
+  margin-bottom: var(--edge);
 }
 
 .content {
@@ -25,7 +51,10 @@ nav li {
 }
 
 article {
-  border: 1px solid green;
+  /* border: 1px solid green; */
+  margin-bottom: var(--spacing);
+  margin-left: var(--edge);
+  margin-right: var(--edge);
 }
 
 article h2 {
@@ -35,7 +64,10 @@ article h2 {
 }
 
 section {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
+  margin-bottom: var(--spacing);
+  margin-left: var(--edge);
+  margin-right: var(--edge);
 }
 
 section h2 {
@@ -44,20 +76,30 @@ section h2 {
   font-weight: bolder;
 }
 
-#contact ul {
-  text-align: center;
+.example-code {
+  height: 200px;
+  width: 200px;
+  background-color: var(--gold);
+}
+
+#contact .content {
+  /* text-align: center; */
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-evenly;
 }
 
-#contact li {
+#contact li, #contact p {
   display: inline;
   font-size: 20px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 footer {
+  color: var(--maroon);
+  background-color: var(--gold);
   text-align: center;
+  padding-left: var(--edge);
+  padding-right: var(--edge);
 }
