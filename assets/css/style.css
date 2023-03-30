@@ -116,3 +116,16 @@ footer {
   padding-left: var(--edge);
   padding-right: var(--edge);
 }
+
+@media screen and (max-width: 768px) {
+  nav ul{
+    text-align: center;
+    font-size: 30px;
+  }
+
+  nav li {
+    display: block;
+    margin: 0px;
+    width: 100%;
+  }
+}
