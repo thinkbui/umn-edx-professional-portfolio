@@ -84,7 +84,16 @@ section h2 {
   height: 300px;
   width: 400px;
   margin: var(--spacing);
+  background-image: url("../images/code.png");
   background-color: var(--gold);
+}
+
+.example-code h3 {
+  font-size: 30px;
+  background-color: var(--maroon);
+  color: var(--gold);
+  position: relative;
+  top: 185px;
 }
 
 section .content {
@@ -96,6 +105,10 @@ section .content {
 
 #code-examples .content {
   flex-wrap: wrap;
+}
+
+#code-examples a{
+  text-decoration: none;
 }
 
 #contact p {
