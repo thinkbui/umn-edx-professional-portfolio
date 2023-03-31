@@ -58,10 +58,6 @@ nav li a:hover {
   margin-bottom: var(--edge);
 }
 
-.content {
-  display: inline;
-}
-
 article {
   margin-bottom: var(--spacing);
   margin-left: var(--edge);
@@ -86,27 +82,41 @@ section h2 {
   font-weight: bolder;
 }
 
-.example-code {
-  height: 300px;
-  width: 400px;
-  margin: var(--spacing);
+#code-examples .content a {
+  width: 240px;
+  height: 220px;
+  flex-grow: 1;
+  display: block;
   background-image: url("../images/code.png");
-  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: var(--gold);
 }
 
 #code-examples .content a:first-child {
-  flex-basis: 100%;
-}
-
-#code-examples .content a:first-child .example-code {
-  height: 600px;
-  width: 800px;
+  height: 300px;
+  width: 100%;
+  flex-grow: 4;
 }
 
 #code-examples .content a:first-child h3 {
   font-size: 60px;
-  top: 370px;
+}
+
+#code-examples .content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+#code-examples a{
+  text-decoration: none;
+}
+
+.example-code {
+  margin: var(--spacing);
 }
 
 .example-code h3 {
@@ -114,22 +124,10 @@ section h2 {
   background-color: var(--maroon);
   color: var(--gold);
   position: relative;
-  top: 185px;
 }
 
-section .content {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-evenly;
-}
-
-#code-examples .content {
-  flex-wrap: wrap;
-}
-
-#code-examples a{
-  text-decoration: none;
+#contact ul {
+  text-align: center;
 }
 
 #contact li {
@@ -143,6 +141,12 @@ section .content {
 #contact li a {
   color: var(--maroon);
   text-decoration: none;
+  transition: background-color 1s ease, color 0.5s ease;
+}
+
+#contact li a:hover{
+  background-color: var(--maroon);
+  color: var(--gold);
 }
 
 footer {
@@ -156,16 +160,6 @@ footer {
 @media screen and (max-width: 992px) {
   #code-examples .content a:first-child {
     flex-basis: 0 1 auto;
-  }
-
-  #code-examples .content a:first-child .example-code {
-    height: 300px;
-    width: 400px;
-  }
-
-  #code-examples .content a:first-child h3 {
-    font-size: 30px;
-    top: 185px;
   }
 
   nav ul {
