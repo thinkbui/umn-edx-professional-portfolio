@@ -6,4 +6,4 @@ This is my repository for construction of my professional portfolio.  I am follo
 ## LIVE VIEW
 This portfolio can be viewed here: https://thinkbui.github.io/umn-edx-professional-portfolio/
 
-![Screenshot]('./assets/images/screenshot.png')
+![Screenshot](./assets/images/screenshot.png)
