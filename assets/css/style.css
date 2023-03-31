@@ -141,6 +141,12 @@ section h2 {
 #contact li a {
   color: var(--maroon);
   text-decoration: none;
+  transition: background-color 1s ease, color 0.5s ease;
+}
+
+#contact li a:hover{
+  background-color: var(--maroon);
+  color: var(--gold);
 }
 
 footer {
